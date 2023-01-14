@@ -1,0 +1,484 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MOH. JA'FAR ILHAM - Personal Portfolio" />
+    <meta
+      name="keywords"
+      content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard"
+    />
+    <meta name="author" content="MOH. JA'FAR ILHAM" />
+    <title>{{judul}}</title>
+    <!--main css file should not be removed -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  </head>
+
+  <body>
+    <!--contains all the div-->
+    <div id="all">
+      <!--mouse  follower-->
+      <div class="cursor"></div>
+      <!--mouse  follower-->
+      <!--loader-->
+      <div id="loader"><span class="color">MOH. JA'FAR</span>ILHAM R</div>
+      <!--loader-end-->
+      <!--link-screen-->
+      <div id="breaker"></div>
+      <div id="breaker-two"></div>
+
+      <!--link-screen-->
+      <!--Main-Section-->
+      <!--Navigator-fullscreen-->
+      <div id="navigation-content">
+        <div class="navigation-close">
+          <span class="close-first"></span>
+          <span class="close-second"></span>
+        </div>
+        <div class="navigation-links">
+          <a href="" data-text="HOME" id="home-link">HOME</a>
+          <a href="#Loremipsumdolorsitamet." data-text="ABOUT" id="about-link"
+            >ABOUT</a
+          >
+          <a
+            href="#Loremipsumdolorsitamet,consecteturadipisicingelit.Ducimus,exercitationem."
+            data-text="PORTFOLIO"
+            id="portfolio-link"
+            >PORTFOLIO</a
+          >
+        </div>
+      </div>
+      <!--Navigator-Fullscreen END-->
+      <!--Home Page-->
+      <!--Menubar-->
+      <div id="navigation-bar">
+        <div class="menubar">
+          <span class="first-span"></span>
+          <span class="second-span"></span>
+          <span class="third-span"></span>
+        </div>
+      </div>
+      <!--Menubar End-->
+      <!--Header-->
+      <div id="header">
+        <div id="particles"></div>
+        <!--Social Media Links-->
+        <div class="social-media-links">
+          <a
+            href="https://instagram.com/ilham.yamaha_sip_pahlawan"
+            target="_blank"
+            ><img
+              src="{% static 'images/instagram logo.png' %}"
+              class="social-media"
+              alt="instagram-logo" /></a
+          ><!--Your instagram homepage link inser in place of "#"-->
+          <a href="https://facebook.com/jakfar.dewa" target="_blank"
+            ><img
+              src="{% static 'images/facebook logo.png' %}"
+              class="social-media"
+              alt="facebook-logo"
+          /></a>
+        </div>
+        <!--Social Media Links end-->
+        <div class="header-content">
+          <div class="header-content-box">
+            <div class="firstline">
+              <span class="color">MOH. JA'FAR </span>ILHAM R
+            </div>
+            <div class="secondline">
+              I'm a
+              <span
+                class="txt-rotate color"
+                data-period="1200"
+                data-rotate='[ " WEB Designer & Programmer.", " Freelancer." ]'
+              ></span>
+              <span class="slash">|</span>
+            </div>
+            <div class="contact">
+              <a
+                href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=jakfar.ilham23@gmail.com"
+                target="_blank"
+                rel="nofollow noopener"
+                title="Send email with Gmail"
+                ><img
+                  src="{% static 'images/mail.png' %}"
+                  alt="email-pic"
+                  class="contactpic" /></a
+              ><!--Your email Id write in place of "#"-->
+              <a href="https://wa.me/082229062398" target="_blank"
+                ><img
+                  src="{% static 'images/call.png' %}"
+                  alt="phone-pic"
+                  class="contactpic" /></a
+              ><!--Your telephone number Id write in place of "#"-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Header End-->
+      <!--HomePage End-->
+      <!--Main-Section End-->
+
+      <!--about-->
+      <div id="about">
+        <!--about content-->
+        <div id="about-content">
+          <div class="about-header">
+            About <span class="color">Me</span>
+            <span class="header-caption"
+              >Get to Know <span class="color"> me.</span></span
+            >
+          </div>
+          <div class="about-main">
+            <div class="about-first-paragraph wow">
+              <!--about description-->
+              <span class="about-first-line">
+                I'm creative
+                <span class="color">web programmer</span>
+                based in Probolinggo , East Java , Indonesia
+              </span>
+              <br />
+              <span class="about-second-line" style="margin-top: 25px">
+                With 1 years of experience as a Junior Web Programmer., <br />I
+                have acquired the skills and knowledge necessary to make your
+                project a success. I enjoy every step while working.</span
+              >
+              <div class="cv">
+                <a href="{% url 'cve' %}"
+                  ><button><span>My CV</span></button></a
+                >
+              </div>
+            </div>
+            <!--about picture-->
+            <div>
+              <img
+                src="{% static 'images/photo.jpg' %}"
+                alt="Your Image"
+                width="280px"
+                style="border-radius: 30px"
+              />
+            </div>
+          </div>
+        </div>
+        <!--services start-->
+        <div id="services">
+          <!--services header-->
+          <div class="services-heading wow">
+            <span class="color">My</span> Services
+          </div>
+          <!--services header end-->
+          <!--services content-->
+          <div class="services-content">
+            <div class="service-one service wow">
+              <div class="service-img">
+                <img src="{% static 'images/coding.png' %}" alt="service-one" />
+              </div>
+              <div class="service-description">
+                <h2>Web Designing</h2>
+              </div>
+            </div>
+            <div class="service-two service wow">
+              <div class="service-img">
+                <img
+                  src="{% static 'images/instagram.png' %}"
+                  alt="service-two"
+                />
+              </div>
+              <div class="service-description">
+                <h2>Social Media</h2>
+              </div>
+            </div>
+            <div class="service-three service wow">
+              <div class="service-img">
+                <img src="{% static 'images/bulb.png' %}" alt="service-three" />
+              </div>
+              <div class="service-description">
+                <h2>Creative Design</h2>
+              </div>
+            </div>
+          </div>
+          <!--services content end-->
+        </div>
+        <!--services end-->
+        <div id="skills">
+          <div class="skills-header">My <span class="color"> Skills</span></div>
+          <div class="skills-content" style="text-align: center">
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">HTML/CSS</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="html-progress wow">95%</div>
+              </div>
+            </div>
+
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">Javascript</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="js-progress wow">88%</div>
+              </div>
+            </div>
+
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">Django (Python)</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="adobe-progress wow">90%</div>
+              </div>
+            </div>
+
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">PHP</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="php-progress wow">83%</div>
+              </div>
+            </div>
+
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">JQuery</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="jquery-progress wow">86%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--copyright-section You Can Remove After Downloading-->
+        <div class="footer">
+          <div class="footer-text">
+            <img
+              src="{% static 'images/copyright.png' %}"
+              alt="copyright-img"
+              class="images"
+              height="14px"
+            />
+            Moh. Ja'far Ilham R (bLack Domon)
+          </div>
+        </div>
+        <!--copyright-section-->
+      </div>
+      <!--about end-->
+
+      <!--portfolio-->
+      <div id="portfolio">
+        <div class="portfolio-header">
+          <span class="color"> My </span> Portfolio
+          <span class="header-caption">
+            Some Of My <span class="color"> Works</span></span
+          >
+        </div>
+        <div id="portfolio-content">
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img
+                src="{% static 'images/arumi.png' %}"
+                alt="portfolio-first"
+              />
+            </div>
+            <div class="portfolio-text">
+              <h2>PP. Jalaluddin Ar-Rumi, Jember</h2>
+              <p>
+                Website ini berupada buku induk santriwan dan santriwati PP
+                Jalaluddin Ar-Rumi. Yang saya buat pada bulan November 2022
+                menggunakan framework Django.
+              </p>
+              <div class="button">
+                <a href="https://arumi.pythonanywhere.com" target="_blank"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio portfolio-second">
+            <div class="portfolio-image">
+              <img
+                src="{% static 'images/ecomerce.png' %}"
+                alt="portfolio-second"
+              />
+            </div>
+            <div class="portfolio-text">
+              <h2>Ecomerce Terpusat</h2>
+              <p>
+                Merupakan karya saya dengan bantuan arahan ketika masih aktif
+                kuliah di Universitas Nurul Jadid (UNUJA). Dosen Pembimbing
+                dikala itu ialah Bapak Ainol Yaqin, M.Kom
+              </p>
+              <div class="button">
+                <a href="https://ecomerce.pythonanywhere.com" target="_blank"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio portfolio-third">
+            <div class="portfolio-image">
+              <img src="{% static 'images/bs5.png' %}" alt="portfolio-third" />
+            </div>
+            <div class="portfolio-text">
+              <h2>UI Designing</h2>
+              <p>
+                Beberapa website yang pernah saya buat sebelumnya selain 2
+                projek diatas. diantaranya saya menggunakan Bootsrap 4. Dan kini
+                saya mulai mempelajari dan menggunakan Bootsrap 5 sebagai
+                kerangka kerja saya.
+              </p>
+              <div class="button">
+                <a href="https://getbootstrap.com" target="_blank"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio portfolio-fourth">
+            <div class="portfolio-image">
+              <img
+                src="{% static 'images/dj.png' %}"
+                alt="portfolio-third"
+                style="border: 2px solid white"
+              />
+            </div>
+            <div class="portfolio-text">
+              <h2>Django Project</h2>
+              <p>
+                Dalam beberapa kasus projek, saya terkadang menggunakan Django
+                (python) dengan menyesuaikan permasalahan kasus dan kebutuhan
+                kerja dalam pembuatan website yang sedang dikerjakan.
+              </p>
+              <div class="button">
+                <a href="https://djangoproject.com" target="_blank"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio portfolio-fived">
+            <div class="portfolio-image">
+              <img src="{% static 'images/lara.jpg' %}" alt="portfolio-third" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Laravel</h2>
+              <p>
+                Untuk Laravel saya pribadi masih terus belajar, terkadang hal
+                yang saya buat dengan laravel hanya sekedar CRUD biasa atau
+                hanya sebuah UI.
+              </p>
+              <div class="button">
+                <a href="https://laravel.com" target="_blank"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--copyright-section You Can Remove After Downloading-->
+        <div class="footer">
+          <div class="footer-text">
+            <img
+              src="{% static 'images/copyright.png' %}"
+              alt="copyright-img"
+              class="images"
+              height="14px"
+            />
+            Moh. Ja'far Ilham R (bLack Domon)
+          </div>
+        </div>
+        <!--copyright-section-->
+      </div>
+      <!--portfolio end-->
+    </div>
+    <!--all the divisions-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/particles.js' %}"></script>
+    <script src="{% static 'js/particles.min.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <!--particles script-->
+    <script>
+      particlesJS("particles", {
+        particles: {
+          number: { value: 40, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>
